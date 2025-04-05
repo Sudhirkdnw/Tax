@@ -113,6 +113,19 @@ if (isEnvExist === false) {
         .then(() => console.log('Database connected successfully'))
         .catch((err) => console.log(err.message))
 
+//     const mongoose = require('mongoose');
+
+// const db = process.env.DB_STRING;
+
+// mongoose.connect(db, {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+// })
+// .then(() => console.log('✅ Database connected successfully'))
+// .catch((err) => {
+//     console.error('❌ Failed to connect to MongoDB:', err.message);
+//     process.exit(1); // Optional: Exit the process if DB connection fails
+// });
     // routes
     app.use('/api/user', users);
     app.use('/api/taxfile_price', taxFilePrices);
